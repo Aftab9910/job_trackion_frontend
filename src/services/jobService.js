@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = "http://localhost:4000/api/jobs"; // replace with actual
+const API_BASE = "https://backendcode-ig7b.onrender.com/api/jobs"
 
 export const fetchJobs = (status) =>
   axios.get(API_BASE, { params: status ? { status } : {} });
